@@ -5,56 +5,104 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Leukste keukencadeaus voor foodies | ProductHunter</title>
 <meta name="description" content="4 leuke cadeau-ideeen voor foodies, geselecteerd op beoordeling en aantal reviews op Amazon.nl.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; line-height: 1.6; color: #1a1a1a; }
-  a { color: #B45309; }
-  header { margin-bottom: 32px; }
-  header a { text-decoration: none; color: #1a1a1a; font-weight: bold; }
-  h1 { font-size: 1.8rem; margin-bottom: 8px; }
-  .intro { color: #444; font-style: italic; }
-  .product { border-top: 1px solid #eee; padding: 24px 0; }
-  .product h2 { font-size: 1.25rem; margin-bottom: 4px; }
-  .rating { color: #B45309; font-weight: bold; margin: 8px 0; }
-  .cta { display: inline-block; margin-top: 8px; padding: 10px 18px; background: #B45309; color: #fff; border-radius: 6px; text-decoration: none; font-weight: bold; }
-  .cta:hover { background: #92400e; }
-  footer { margin-top: 48px; font-size: 0.85rem; color: #666; border-top: 1px solid #eee; padding-top: 16px; }
+  :root {
+    --accent: #B45309;
+    --accent-dark: #92400e;
+    --bg: #FAFAF9;
+    --card-bg: #FFFFFF;
+    --text: #1c1917;
+    --text-muted: #57534e;
+    --border: #e7e5e4;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 780px; margin: 0 auto; padding: 0 20px 64px; background: var(--bg); color: var(--text); line-height: 1.6; }
+  header { padding: 22px 0; }
+  header a.logo { text-decoration: none; color: var(--text); font-weight: 800; font-size: 1.15rem; letter-spacing: -0.02em; }
+  header a.logo span { color: var(--accent); }
+  .hero { padding: 16px 0 8px; }
+  h1 { font-size: 2rem; margin: 0 0 12px; letter-spacing: -0.02em; }
+  .intro { color: var(--text-muted); font-size: 1.05rem; margin: 0; max-width: 640px; }
+  .product-grid { display: flex; flex-direction: column; gap: 20px; margin-top: 28px; }
+  .product-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.04); display: flex; gap: 0; }
+  .product-card img { width: 180px; height: 180px; object-fit: contain; background: #fff; padding: 16px; flex-shrink: 0; }
+  .product-body { padding: 20px 20px 20px 4px; display: flex; flex-direction: column; flex: 1; min-width: 0; }
+  .product-number { color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .product-card h2 { font-size: 1.15rem; margin: 4px 0 8px; line-height: 1.3; }
+  .product-card p.desc { color: var(--text-muted); font-size: 0.94rem; margin: 0 0 14px; flex-grow: 1; }
+  .rating { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; font-size: 0.9rem; flex-wrap: wrap; }
+  .stars { color: #F59E0B; letter-spacing: 1px; }
+  .price { font-weight: 700; color: var(--text); }
+  .cta { align-self: flex-start; background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: background 0.15s ease; }
+  .cta:hover { background: var(--accent-dark); }
+  footer { margin-top: 56px; font-size: 0.82rem; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 20px; }
+  @media (max-width: 520px) {
+    .product-card { flex-direction: column; }
+    .product-card img { width: 100%; height: 210px; padding: 0; }
+    .product-body { padding: 18px; }
+  }
 </style>
 </head>
 <body>
 
 <header>
-  <a href="../index.html">&larr; ProductHunter</a>
+  <a class="logo" href="../index.html">Product<span>Hunter</span></a>
 </header>
 
-<h1>Leukste keukencadeaus voor foodies</h1>
-<p class="intro">Op zoek naar een cadeau voor iemand die houdt van koken en lekker eten? Deze 4 producten hebben we voor je geselecteerd op basis van beoordeling en aantal reviews op Amazon.nl &mdash; stuk voor stuk cadeaus die net dat beetje meer bieden dan de standaard keukenspullen.</p>
-
-<div class="product">
-  <h2>1. TruffleHunter Zwarte &amp; Witte Truffelolie Cadeauset (2 x 250ml)</h2>
-  <p>Een cadeauset met twee soorten truffelolie (zwart en wit) op basis van extra vergine olijfolie, vegan en kosher. Perfect voor wie graag kookt en van een extra smaakdimensie houdt &mdash; meteen een chic ogend cadeau voor bij de borrel of het diner.</p>
-  <p class="rating">&#9733; 4,5 (48 beoordelingen) &mdash; &euro;44,95</p>
-  <a class="cta" href="https://amzn.to/4xlLmGU" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+<div class="hero">
+  <h1>Leukste keukencadeaus voor foodies</h1>
+  <p class="intro">Op zoek naar een cadeau voor iemand die houdt van koken en lekker eten? Deze 4 producten hebben we voor je geselecteerd op basis van beoordeling en aantal reviews op Amazon.nl &mdash; stuk voor stuk cadeaus die net dat beetje meer bieden dan de standaard keukenspullen.</p>
 </div>
 
-<div class="product">
-  <h2>2. Stanley 1913 Classic Legendary Food Jar met Spork (0,4L)</h2>
-  <p>Dubbelwandige thermosbeker/lunchpot die tot 7 uur warm of koud houdt, inclusief handige spork (lepel-vork combinatie). Enorm populair en viraal drinkfles-merk op dit moment &mdash; een cadeau dat elke foodie dagelijks gebruikt.</p>
-  <p class="rating">&#9733; 4,6 (4.404 beoordelingen) &mdash; &euro;32,99</p>
-  <a class="cta" href="https://amzn.to/4gOlf5n" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
-</div>
+<div class="product-grid">
 
-<div class="product">
-  <h2>3. BlauKe Kaasplank van Bamboe met Kaasmessenset</h2>
-  <p>Ronde, draaibare kaasplank van 100% natuurlijke bamboe met 4 kaasmesjes die wegwerken in een verborgen lade. Ideaal om mee te presenteren op een borrel, housewarming of feestje &mdash; en een van de meest verkochte kaasplanken op Amazon.nl.</p>
-  <p class="rating">&#9733; 4,6 (1.916 beoordelingen) &mdash; &euro;26,99</p>
-  <a class="cta" href="https://amzn.to/4cQ2QCY" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
-</div>
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/61DYtC89ivL._AC_SL1500_.jpg" alt="TruffleHunter Zwarte & Witte Truffelolie Cadeauset" loading="lazy">
+    <div class="product-body">
+      <span class="product-number">01</span>
+      <h2>TruffleHunter Zwarte &amp; Witte Truffelolie Cadeauset (2 x 250ml)</h2>
+      <p class="desc">Een cadeauset met twee soorten truffelolie (zwart en wit) op basis van extra vergine olijfolie, vegan en kosher. Perfect voor wie graag kookt en van een extra smaakdimensie houdt &mdash; meteen een chic ogend cadeau voor bij de borrel of het diner.</p>
+      <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span><span>4,5 (48 beoordelingen)</span><span class="price">&euro;44,95</span></div>
+      <a class="cta" href="https://amzn.to/4xlLmGU" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+    </div>
+  </div>
 
-<div class="product">
-  <h2>4. Cosumy Espressokopjes Set (6 stuks, met schotels)</h2>
-  <p>Kleurrijke set van 6 keramische espressokopjes met schotels in een geschenkdoos &mdash; direct cadeau-klaar. Houdt de koffie langer warm en is vaatwasmachinebestendig, dus ook nog eens praktisch voor dagelijks gebruik.</p>
-  <p class="rating">&#9733; 4,4 (3.934 beoordelingen) &mdash; &euro;20,99</p>
-  <a class="cta" href="https://amzn.to/4xxQcRt" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/61uatB8fz4L._AC_SL1500_.jpg" alt="Stanley 1913 Classic Legendary Food Jar met Spork" loading="lazy">
+    <div class="product-body">
+      <span class="product-number">02</span>
+      <h2>Stanley 1913 Classic Legendary Food Jar met Spork (0,4L)</h2>
+      <p class="desc">Dubbelwandige thermosbeker/lunchpot die tot 7 uur warm of koud houdt, inclusief handige spork (lepel-vork combinatie). Enorm populair en viraal drinkfles-merk op dit moment &mdash; een cadeau dat elke foodie dagelijks gebruikt.</p>
+      <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span>4,6 (4.404 beoordelingen)</span><span class="price">&euro;32,99</span></div>
+      <a class="cta" href="https://amzn.to/4gOlf5n" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/91b3dIAo+nL._AC_SL1500_.jpg" alt="BlauKe Kaasplank van Bamboe met Kaasmessenset" loading="lazy">
+    <div class="product-body">
+      <span class="product-number">03</span>
+      <h2>BlauKe Kaasplank van Bamboe met Kaasmessenset</h2>
+      <p class="desc">Ronde, draaibare kaasplank van 100% natuurlijke bamboe met 4 kaasmesjes die wegwerken in een verborgen lade. Ideaal om mee te presenteren op een borrel, housewarming of feestje &mdash; en een van de meest verkochte kaasplanken op Amazon.nl.</p>
+      <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span>4,6 (1.916 beoordelingen)</span><span class="price">&euro;26,99</span></div>
+      <a class="cta" href="https://amzn.to/4cQ2QCY" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/71aqFdPq1ML._AC_SL1500_.jpg" alt="Cosumy Espressokopjes Set" loading="lazy">
+    <div class="product-body">
+      <span class="product-number">04</span>
+      <h2>Cosumy Espressokopjes Set (6 stuks, met schotels)</h2>
+      <p class="desc">Kleurrijke set van 6 keramische espressokopjes met schotels in een geschenkdoos &mdash; direct cadeau-klaar. Houdt de koffie langer warm en is vaatwasmachinebestendig, dus ook nog eens praktisch voor dagelijks gebruik.</p>
+      <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span><span>4,4 (3.934 beoordelingen)</span><span class="price">&euro;20,99</span></div>
+      <a class="cta" href="https://amzn.to/4xxQcRt" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+    </div>
+  </div>
+
 </div>
 
 <footer>
@@ -63,4 +111,3 @@
 
 </body>
 </html>
-
