@@ -5,63 +5,115 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Beste airfryer-accessoires voor beginners | ProductHunter</title>
 <meta name="description" content="5 handige airfryer-accessoires voor beginners, geselecteerd op beoordeling en aantal reviews op Amazon.nl.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; line-height: 1.6; color: #1a1a1a; }
-  a { color: #B45309; }
-  header { margin-bottom: 32px; }
-  header a { text-decoration: none; color: #1a1a1a; font-weight: bold; }
-  h1 { font-size: 1.8rem; margin-bottom: 8px; }
-  .intro { color: #444; font-style: italic; }
-  .product { border-top: 1px solid #eee; padding: 24px 0; }
-  .product h2 { font-size: 1.25rem; margin-bottom: 4px; }
-  .rating { color: #B45309; font-weight: bold; margin: 8px 0; }
-  .cta { display: inline-block; margin-top: 8px; padding: 10px 18px; background: #B45309; color: #fff; border-radius: 6px; text-decoration: none; font-weight: bold; }
-  .cta:hover { background: #92400e; }
-  footer { margin-top: 48px; font-size: 0.85rem; color: #666; border-top: 1px solid #eee; padding-top: 16px; }
+  :root {
+    --accent: #B45309;
+    --accent-dark: #92400e;
+    --bg: #FAFAF9;
+    --card-bg: #FFFFFF;
+    --text: #1c1917;
+    --text-muted: #57534e;
+    --border: #e7e5e4;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 780px; margin: 0 auto; padding: 0 20px 64px; background: var(--bg); color: var(--text); line-height: 1.6; }
+  header { padding: 22px 0; }
+  header a.logo { text-decoration: none; color: var(--text); font-weight: 800; font-size: 1.15rem; letter-spacing: -0.02em; }
+  header a.logo span { color: var(--accent); }
+  .hero { padding: 16px 0 8px; }
+  h1 { font-size: 2rem; margin: 0 0 12px; letter-spacing: -0.02em; }
+  .intro { color: var(--text-muted); font-size: 1.05rem; margin: 0; max-width: 640px; }
+  .product-grid { display: flex; flex-direction: column; gap: 20px; margin-top: 28px; }
+  .product-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.04); display: flex; gap: 0; }
+  .product-card img { width: 180px; height: 180px; object-fit: contain; background: #fff; padding: 16px; flex-shrink: 0; }
+  .product-body { padding: 20px 20px 20px 4px; display: flex; flex-direction: column; flex: 1; min-width: 0; }
+  .product-number { color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .product-card h2 { font-size: 1.15rem; margin: 4px 0 8px; line-height: 1.3; }
+  .product-card p.desc { color: var(--text-muted); font-size: 0.94rem; margin: 0 0 14px; flex-grow: 1; }
+  .rating { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; font-size: 0.9rem; flex-wrap: wrap; }
+  .stars { color: #F59E0B; letter-spacing: 1px; }
+  .price { font-weight: 700; color: var(--text); }
+  .cta { align-self: flex-start; background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: background 0.15s ease; }
+  .cta:hover { background: var(--accent-dark); }
+  footer { margin-top: 56px; font-size: 0.82rem; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 20px; }
+  @media (max-width: 520px) {
+    .product-card { flex-direction: column; }
+    .product-card img { width: 100%; height: 210px; padding: 0; }
+    .product-body { padding: 18px; }
+  }
 </style>
 </head>
 <body>
 
 <header>
-  <a href="../index.html">&larr; ProductHunter</a>
+  <a class="logo" href="../index.html">Product<span>Hunter</span></a>
 </header>
 
-<h1>Beste airfryer-accessoires voor beginners</h1>
-<p class="intro">Net een airfryer aangeschaft of overweeg je er een? Deze 5 accessoires maken het gebruik ervan een stuk makkelijker en schoner &mdash; van bakpapier tot een universeel grillrek. Allemaal geselecteerd op basis van beoordeling en aantal reviews op Amazon.nl.</p>
-
-<div class="product">
-  <h2>1. PORTENTUM Airfryer Bakpapier, 100 stuks</h2>
-  <p>Ronde, vetvrije bakpapiertjes speciaal gemaakt voor de airfryer-mand. Voorkomt dat eten aanplakt en scheelt enorm veel afwas &mdash; ideaal voor dagelijks gebruik en werkt met vrijwel elk merk airfryer.</p>
-  <p class="rating">&#9733; 4,6 (20.900 beoordelingen) &mdash; &euro;8,95</p>
-  <a class="cta" href="https://www.amazon.nl/dp/B0C7SBTGYZ?tag=producthun012-21" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+<div class="hero">
+  <h1>Beste airfryer-accessoires voor beginners</h1>
+  <p class="intro">Net een airfryer aangeschaft of overweeg je er een? Deze 5 accessoires maken het gebruik ervan een stuk makkelijker en schoner &mdash; van bakpapier tot een universeel grillrek. Allemaal geselecteerd op basis van beoordeling en aantal reviews op Amazon.nl.</p>
 </div>
 
-<div class="product">
-  <h2>2. Diboniur Siliconen Vorm Air Fryer, 2 stuks</h2>
-  <p>Herbruikbare siliconen liners als milieuvriendelijk alternatief voor bakpapier. Compatibel met populaire merken zoals Cosori en Philips, eenvoudig schoon te maken in de vaatwasser en jarenlang mee te gaan.</p>
-  <p class="rating">&#9733; 4,5 (2.100 beoordelingen) &mdash; &euro;11,88</p>
-  <a class="cta" href="https://www.amazon.nl/dp/B0D9CSGYYP?tag=producthun012-21" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
-</div>
+<div class="product-grid">
 
-<div class="product">
-  <h2>3. Luchtfriteuse Grillrek, 2 Stuks Stapelbaar RVS</h2>
-  <p>Universeel stapelbaar grillrek van roestvrij staal waarmee je in een keer meer eten tegelijk kunt bereiden, zoals kip en groenten op verschillende niveaus. Past op de meeste airfryers, waaronder Cosori, Philips, Ninja en Russell Hobbs.</p>
-  <p class="rating">&#9733; 4,5 (55 beoordelingen) &mdash; &euro;14,44</p>
-  <a class="cta" href="https://www.amazon.nl/dp/B0GVS7XNCY?tag=producthun012-21" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
-</div>
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/81zJoTuCFBL._AC_SL1500_.jpg" alt="PORTENTUM Airfryer Bakpapier, 100 stuks" loading="lazy">
+    <div class="product-body">
+      <span class="product-number">01</span>
+      <h2>PORTENTUM Airfryer Bakpapier, 100 stuks</h2>
+      <p class="desc">Ronde, vetvrije bakpapiertjes speciaal gemaakt voor de airfryer-mand. Voorkomt dat eten aanplakt en scheelt enorm veel afwas &mdash; ideaal voor dagelijks gebruik en werkt met vrijwel elk merk airfryer.</p>
+      <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span><span>4,6 (20.900 beoordelingen)</span><span class="price">&euro;8,95</span></div>
+      <a class="cta" href="https://www.amazon.nl/dp/B0C7SBTGYZ?tag=producthun012-21" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+    </div>
+  </div>
 
-<div class="product">
-  <h2>4. Edihome Oliespuitfles, 100ml</h2>
-  <p>Handige oliesprayer waarmee je met een fijne nevel precies de juiste hoeveelheid olie op je eten aanbrengt &mdash; belangrijk voor een knapperig resultaat zonder onnodige calorieÃ«n. Gemaakt van roestvrij staal en glas, dus duurzaam en makkelijk te vullen.</p>
-  <p class="rating">&#9733; 4,1 (3.500 beoordelingen) &mdash; &euro;7,99</p>
-  <a class="cta" href="https://www.amazon.nl/dp/B0D87LPWWF?tag=producthun012-21" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
-</div>
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/71JDvlDGcyL._AC_SL1500_.jpg" alt="Diboniur Siliconen Vorm Air Fryer, 2 stuks" loading="lazy">
+    <div class="product-body">
+      <span class="product-number">02</span>
+      <h2>Diboniur Siliconen Vorm Air Fryer, 2 stuks</h2>
+      <p class="desc">Herbruikbare siliconen liners als milieuvriendelijk alternatief voor bakpapier. Compatibel met populaire merken zoals Cosori en Philips, eenvoudig schoon te maken in de vaatwasser en jarenlang mee te gaan.</p>
+      <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span><span>4,5 (2.100 beoordelingen)</span><span class="price">&euro;11,88</span></div>
+      <a class="cta" href="https://www.amazon.nl/dp/B0D9CSGYYP?tag=producthun012-21" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+    </div>
+  </div>
 
-<div class="product">
-  <h2>5. Air Fryer-rek 17,8 cm met 4 Barbecuestokjes, 2 stuks</h2>
-  <p>Compact rek met bijbehorende spiesjes waarmee je bijvoorbeeld kip- of groentespiesjes verticaal in de airfryer kunt bereiden. Universeel geschikt voor airfryers van 3,5 tot 5,5 liter en ideaal om je airfryer-menu wat uit te breiden.</p>
-  <p class="rating">&#9733; 4,4 (1.000 beoordelingen) &mdash; &euro;10,67</p>
-  <a class="cta" href="https://www.amazon.nl/dp/B0BRBBWJG1?tag=producthun012-21" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/818p0s8ZuuL._AC_SL1500_.jpg" alt="Luchtfriteuse Grillrek, 2 Stuks Stapelbaar RVS" loading="lazy">
+    <div class="product-body">
+      <span class="product-number">03</span>
+      <h2>Luchtfriteuse Grillrek, 2 Stuks Stapelbaar RVS</h2>
+      <p class="desc">Universeel stapelbaar grillrek van roestvrij staal waarmee je in een keer meer eten tegelijk kunt bereiden, zoals kip en groenten op verschillende niveaus. Past op de meeste airfryers, waaronder Cosori, Philips, Ninja en Russell Hobbs.</p>
+      <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span><span>4,5 (55 beoordelingen)</span><span class="price">&euro;14,44</span></div>
+      <a class="cta" href="https://www.amazon.nl/dp/B0GVS7XNCY?tag=producthun012-21" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/713umZe0CCL._AC_SL1500_.jpg" alt="Edihome Oliespuitfles, 100ml" loading="lazy">
+    <div class="product-body">
+      <span class="product-number">04</span>
+      <h2>Edihome Oliespuitfles, 100ml</h2>
+      <p class="desc">Handige oliesprayer waarmee je met een fijne nevel precies de juiste hoeveelheid olie op je eten aanbrengt &mdash; belangrijk voor een knapperig resultaat zonder onnodige calorieÃ«n. Gemaakt van roestvrij staal en glas, dus duurzaam en makkelijk te vullen.</p>
+      <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span><span>4,1 (3.500 beoordelingen)</span><span class="price">&euro;7,99</span></div>
+      <a class="cta" href="https://www.amazon.nl/dp/B0D87LPWWF?tag=producthun012-21" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/71GZigWbwoL._AC_SL1500_.jpg" alt="Air Fryer-rek 17,8 cm met 4 Barbecuestokjes, 2 stuks" loading="lazy">
+    <div class="product-body">
+      <span class="product-number">05</span>
+      <h2>Air Fryer-rek 17,8 cm met 4 Barbecuestokjes, 2 stuks</h2>
+      <p class="desc">Compact rek met bijbehorende spiesjes waarmee je bijvoorbeeld kip- of groentespiesjes verticaal in de airfryer kunt bereiden. Universeel geschikt voor airfryers van 3,5 tot 5,5 liter en ideaal om je airfryer-menu wat uit te breiden.</p>
+      <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span><span>4,4 (1.000 beoordelingen)</span><span class="price">&euro;10,67</span></div>
+      <a class="cta" href="https://www.amazon.nl/dp/B0BRBBWJG1?tag=producthun012-21" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+    </div>
+  </div>
+
 </div>
 
 <footer>
