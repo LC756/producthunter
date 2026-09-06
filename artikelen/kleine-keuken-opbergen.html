@@ -5,53 +5,109 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Slimme opbergoplossingen om ruimte te besparen in een kleine keuken | ProductHunter</title>
 <meta name="description" content="4 handige opbergoplossingen voor een kleine keuken, geselecteerd op beoordeling en aantal reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; line-height: 1.6; color: #1a1a1a; }
-  a { color: #B45309; }
-  header { margin-bottom: 32px; }
-  header a { text-decoration: none; color: #1a1a1a; font-weight: bold; }
-  h1 { font-size: 1.8rem; margin-bottom: 8px; }
-  .intro { color: #444; font-style: italic; }
-  .product { border-top: 1px solid #eee; padding: 24px 0; }
-  .product h2 { font-size: 1.25rem; margin-bottom: 4px; }
-  .rating { color: #B45309; font-weight: bold; margin: 8px 0; }
-  .cta { display: inline-block; margin-top: 8px; padding: 10px 18px; background: #B45309; color: #fff; border-radius: 6px; text-decoration: none; font-weight: bold; }
-  .cta:hover { background: #92400e; }
-  footer { margin-top: 48px; font-size: 0.85rem; color: #666; border-top: 1px solid #eee; padding-top: 16px; }
+  :root {
+    --accent: #B45309;
+    --accent-dark: #92400e;
+    --bg: #FAFAF9;
+    --card-bg: #FFFFFF;
+    --text: #1c1917;
+    --text-muted: #57534e;
+    --border: #e7e5e4;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 780px; margin: 0 auto; padding: 0 20px 64px; background: var(--bg); color: var(--text); line-height: 1.6; }
+  header { padding: 22px 0; }
+  header a.logo { text-decoration: none; color: var(--text); font-weight: 800; font-size: 1.15rem; letter-spacing: -0.02em; }
+  header a.logo span { color: var(--accent); }
+  .hero { padding: 16px 0 8px; }
+  h1 { font-size: 2rem; margin: 0 0 12px; letter-spacing: -0.02em; }
+  .intro { color: var(--text-muted); font-size: 1.05rem; margin: 0; max-width: 640px; }
+  .product-grid { display: flex; flex-direction: column; gap: 20px; margin-top: 28px; }
+  .product-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.04); display: flex; gap: 0; }
+  .product-card img { width: 180px; height: 180px; object-fit: contain; background: #fff; padding: 16px; flex-shrink: 0; }
+  .product-body { padding: 20px 20px 20px 4px; display: flex; flex-direction: column; flex: 1; min-width: 0; }
+  .product-number { color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .product-card h2 { font-size: 1.15rem; margin: 4px 0 8px; line-height: 1.3; }
+  .product-card p.desc { color: var(--text-muted); font-size: 0.94rem; margin: 0 0 14px; flex-grow: 1; }
+  .rating { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; font-size: 0.9rem; flex-wrap: wrap; }
+  .stars { color: #F59E0B; letter-spacing: 1px; }
+  .price { font-weight: 700; color: var(--text); }
+  .cta { align-self: flex-start; background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: background 0.15s ease; }
+  .cta:hover { background: var(--accent-dark); }
+  footer { margin-top: 56px; font-size: 0.82rem; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 20px; }
+  @media (max-width: 520px) {
+    .product-card { flex-direction: column; }
+    .product-card img { width: 100%; height: 210px; padding: 0; }
+    .product-body { padding: 18px; }
+  }
 </style>
 </head>
 <body>
+
 <header>
-  <a href="../index.html">&larr; ProductHunter</a>
+  <a class="logo" href="../index.html">Product<span>Hunter</span></a>
 </header>
-<h1>Slimme opbergoplossingen om ruimte te besparen in een kleine keuken</h1>
-<p class="intro">Kleine keuken en toch alles overzichtelijk? Deze 4 producten hebben we voor je geselecteerd op basis van beoordeling en aantal reviews op Amazon.nl.</p>
-<div class="product">
-  <h2>1. Deco Haus Voorraadpotten met Deksel, 6-delige set</h2>
-  <p>Luchtdichte acryl voorraadpotten met bamboe deksel en etiketten, perfect om muesli, pasta, noten of snoep overzichtelijk in de kast te bewaren. Stapelbaar, dus je wint ook nog eens kastruimte.</p>
-  <p class="rating">&#9733; 4,5 (898 beoordelingen) &mdash; &euro;42,99</p>
-  <a class="cta" href="https://amzn.to/4cYWAsx" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+
+<div class="hero">
+  <h1>Slimme opbergoplossingen om ruimte te besparen in een kleine keuken</h1>
+  <p class="intro">Kleine keuken en toch alles overzichtelijk? Deze 4 producten hebben we voor je geselecteerd op basis van beoordeling en aantal reviews op Amazon.nl.</p>
 </div>
-<div class="product">
-  <h2>2. Roterend kruidenrek met 20 glazen kruidenpotjes</h2>
-  <p>360 graden draaibaar kruidenrek van roestvrij staal en hout, inclusief etiketten, schrijfstift en trechter. In een keer je hele kruidencollectie overzichtelijk op het aanrecht of in de kast.</p>
-  <p class="rating">&#9733; 4,4 (639 beoordelingen) &mdash; &euro;26,99</p>
-  <a class="cta" href="https://amzn.to/4wJOgUM" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+
+<div class="product-grid">
+
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/91jkjrVWXNL._AC_SL1500_.jpg" alt="Deco Haus Voorraadpotten met Deksel, 6-delige set" loading="lazy">
+    <div class="product-body">
+      <span class="product-number">01</span>
+      <h2>Deco Haus Voorraadpotten met Deksel, 6-delige set</h2>
+      <p class="desc">Luchtdichte acryl voorraadpotten met bamboe deksel en etiketten, perfect om muesli, pasta, noten of snoep overzichtelijk in de kast te bewaren. Stapelbaar, dus je wint ook nog eens kastruimte.</p>
+      <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span>4,5 (898 beoordelingen)</span><span class="price">&euro;42,99</span></div>
+      <a class="cta" href="https://amzn.to/4cYWAsx" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/71xFn2EDtkL._AC_SL1500_.jpg" alt="Roterend kruidenrek met 20 glazen kruidenpotjes" loading="lazy">
+    <div class="product-body">
+      <span class="product-number">02</span>
+      <h2>Roterend kruidenrek met 20 glazen kruidenpotjes</h2>
+      <p class="desc">360 graden draaibaar kruidenrek van roestvrij staal en hout, inclusief etiketten, schrijfstift en trechter. In een keer je hele kruidencollectie overzichtelijk op het aanrecht of in de kast.</p>
+      <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span><span>4,4 (639 beoordelingen)</span><span class="price">&euro;26,99</span></div>
+      <a class="cta" href="https://amzn.to/4wJOgUM" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/71ruggcgf0L._AC_SL1500_.jpg" alt="Koelkastorganizer set (4 stuks)" loading="lazy">
+    <div class="product-body">
+      <span class="product-number">03</span>
+      <h2>Koelkastorganizer set (4 stuks)</h2>
+      <p class="desc">Doorzichtige BPA-vrije opbergbakken voor in de koelkast, kasten of laden. Ideaal om groente, zuivel of blikjes gegroepeerd te houden.</p>
+      <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span>4,5 (451 beoordelingen)</span><span class="price">&euro;41,31 (set van 4)</span></div>
+      <a class="cta" href="https://amzn.to/4grA3Wm" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/71hUqKnsqFL._AC_SL1500_.jpg" alt="Stasher herbruikbaar siliconen vershoudzakje" loading="lazy">
+    <div class="product-body">
+      <span class="product-number">04</span>
+      <h2>Stasher herbruikbaar siliconen vershoudzakje</h2>
+      <p class="desc">Duurzaam alternatief voor plastic zakjes: vaatwasser-, magnetron- en vriezerbestendig, en gaat jarenlang mee. Scheelt ruimte in de voorraadkast en is een bekend, veelgekocht merk.</p>
+      <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span>4,6 (3.456 beoordelingen)</span><span class="price">&euro;10,16</span></div>
+      <a class="cta" href="https://amzn.to/4qxj4Xg" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
+    </div>
+  </div>
+
 </div>
-<div class="product">
-  <h2>3. Koelkastorganizer set (4 stuks)</h2>
-  <p>Doorzichtige BPA-vrije opbergbakken voor in de koelkast, kasten of laden. Ideaal om groente, zuivel of blikjes gegroepeerd te houden.</p>
-  <p class="rating">&#9733; 4,5 (451 beoordelingen) &mdash; &euro;41,31 (set van 4)</p>
-  <a class="cta" href="https://amzn.to/4grA3Wm" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
-</div>
-<div class="product">
-  <h2>4. Stasher herbruikbaar siliconen vershoudzakje</h2>
-  <p>Duurzaam alternatief voor plastic zakjes: vaatwasser-, magnetron- en vriezerbestendig, en gaat jarenlang mee. Scheelt ruimte in de voorraadkast en is een bekend, veelgekocht merk.</p>
-  <p class="rating">&#9733; 4,6 (3.456 beoordelingen) &mdash; &euro;10,16</p>
-  <a class="cta" href="https://amzn.to/4qxj4Xg" target="_blank" rel="sponsored noopener">Bekijk op Amazon</a>
-</div>
+
 <footer>
   Dit artikel bevat affiliate-links. Als je via een van deze links iets koopt, ontvangen wij mogelijk een kleine commissie, zonder extra kosten voor jou.
 </footer>
+
 </body>
 </html>
